@@ -470,7 +470,7 @@ const renderSupportDetail = (s) => `
   <div class="address-line">
     <p>📍Ver no Mapa</p>
     <a 
-      href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name)}" 
+      href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.address)}" 
       target="_blank"
       class="map-btn"
     >
