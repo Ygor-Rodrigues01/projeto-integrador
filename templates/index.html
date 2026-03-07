@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechRepair - Sistema de Manutenção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Overlay de Loading Global -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Modal Genérico -->
+  <div id="modal-container" class="modal-container hidden">
+    <div class="modal-content">
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
